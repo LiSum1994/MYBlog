@@ -26,5 +26,19 @@ namespace zkf1017.Controllers
 
             return View();
         }
+
+        /// <summary>
+        /// 新闻列表
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult News()
+        {
+            // ViewBag.Message = "Your News page.";
+            string[] data = new string[] { "sdfsdfsdfsdf", "123132456465", "pppppppppppppp" };
+            ViewBag.data = data;
+            ViewData["data"] = data;
+
+            return View();
+        }
     }
 }
