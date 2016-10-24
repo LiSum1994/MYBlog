@@ -27,6 +27,13 @@ namespace zkf1017.Controllers
             return View();
         }
 
+        public ActionResult Welcome()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
         /// <summary>
         /// 新闻列表
         /// </summary>
