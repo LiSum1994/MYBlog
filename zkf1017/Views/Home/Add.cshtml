@@ -3,6 +3,19 @@
 }
 <h2>@ViewBag.Title.</h2>
 
-<h3>Welocme to ASP.NET MVC世界</h3>
+<form action="Home/Save" method="get" >
+    <table>
 
+        <tr>
+            <td>新闻标题</td>
+            <td><input type="text" name="title" value="" /></td>
+        </tr>
+        <tr>
+            <td>正文内容</td>
+            <td><textarea cols="60" rows="4"></textarea></td>
+        </tr>
+    </table>
+    <button type="submit" >提交</button>
+    <button type="reset">取消</button>
+</form>
 
