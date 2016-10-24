@@ -41,9 +41,12 @@ namespace zkf1017.Controllers
         public ActionResult News()
         {
             // ViewBag.Message = "Your News page.";
-            string[] data = new string[] { "sdfsdfsdfsdf", "123132456465", "pppppppppppppp" };
-            ViewBag.data = data;
-            ViewData["data"] = data;
+            return View();
+        }
+
+        public ActionResult Add()
+        {
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
