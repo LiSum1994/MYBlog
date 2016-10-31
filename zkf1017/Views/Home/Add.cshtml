@@ -1,21 +1,30 @@
-﻿@{
+﻿            
+@{
     ViewBag.Title = "Add";
 }
-<h2>@ViewBag.Title.</h2>
 
-<form action="Home/Save" method="get" >
-    <table>
+<h2>添加新闻</h2>
 
+<form action="/Home/Save" method="post">
+    <table class="table table-bordered">
         <tr>
-            <td>新闻标题</td>
-            <td><input type="text" name="title" value="" /></td>
+            <td>标题：</td>
+            <td><input type="text" name="Title" value="" />  </td>
         </tr>
         <tr>
-            <td>正文内容</td>
-            <td><textarea cols="60" rows="4"></textarea></td>
+            <td>内容</td>
+            <td>
+                <textarea name="Content" cols="60" rows="4"></textarea>
+            </td>
         </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" class="btn btn-primary">保存</button>
+                <button type="reset" class="btn btn-warning">取消</button>
+            </td>
+        </tr>
+
     </table>
-    <button type="submit" >提交</button>
-    <button type="reset">取消</button>
 </form>
 

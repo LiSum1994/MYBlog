@@ -44,11 +44,26 @@ namespace zkf1017.Controllers
             return View();
         }
 
+
+        /// <summary>
+        /// 添加新闻
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Add()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
+
+        /// <summary>
+        /// 保存新闻内容
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Save(string title, string content)
+        {
+            ViewBag.Title = title;
+            ViewBag.Content = content;
+            return View();
+        }
+
     }
 }
