@@ -20,12 +20,14 @@ namespace zkf1017.Controllers
             return View();
         }
 
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
 
             return View();
         }
+
 
         public ActionResult Welcome()
         {
@@ -38,11 +40,22 @@ namespace zkf1017.Controllers
         /// 新闻列表
         /// </summary>
         /// <returns></returns>
-        public ActionResult News()
+        public ActionResult NewsList(int page = 10)
         {
-            // ViewBag.Message = "Your News page.";
+            string[] data = new string[] { "燃油车的终极黑科技，新能源车平民化时代的开启",
+                "为什么马云不上淘宝，而刘强东一天两单？" ,
+                "中国人的一天：望女成凤",
+                "沈阳最低气温零下 10 摄氏度 道路结冰"};
+
+            ViewBag.data = data;
+            ViewBag.Page = page;
+
+            //ViewData["data"] = data;
+            //ViewData.Model = data;
             return View();
         }
+
+       
 
 
         /// <summary>
