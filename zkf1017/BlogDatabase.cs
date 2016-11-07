@@ -1,4 +1,4 @@
-﻿namespace News
+﻿namespace zkf1017
 {
     using System;
     using System.ComponentModel.DataAnnotations;
